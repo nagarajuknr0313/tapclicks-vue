@@ -9,7 +9,6 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@mdi/js": "^4.5.95",
     "buefy": "^0.8.5",
     "bulma": "^0.7.5",
     "core-js": "^2.6.5",
