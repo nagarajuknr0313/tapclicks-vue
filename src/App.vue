@@ -1,11 +1,27 @@
 <template>
   <div id="app">
     <div class="columns" style="margin-top: 3px;">
-<div class="column is-one-fifth" >
+<div class="column is-2" >
      <sidebar> </sidebar>
     </div>
      <div class="column is-9 ">
-            <router-view></router-view>
+             <div class="container" >
+    <section class="slider-panel bottom">
+      <span class="headstyle">
+              <b-icon custom-size="mdi-18px"
+                      pack="fas"
+                      icon="user"
+                      size="is-small">
+                  </b-icon> <span style="font-size: 20px;">Order name</span>     </span>
+      <b-tabs :animated="false">
+        <b-tab-item label="info">
+        </b-tab-item>
+        <b-tab-item label="line items">
+        </b-tab-item>
+      </b-tabs>
+    </section>
+   
+  </div>
         </div>
     </div>
     
@@ -36,5 +52,8 @@ export default {
       color: #42b983;
     }
   }
+}
+.headstyle{
+      padding-right: 87%;
 }
 </style>
