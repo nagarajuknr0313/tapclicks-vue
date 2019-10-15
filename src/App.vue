@@ -8,13 +8,43 @@
              <div class="container" >
     <section class="slider-panel bottom">
       <span class="headstyle">
-              <b-icon custom-size="mdi-18px"
+        <span style="color:blue"><b-icon custom-size="mdi-18px"
                       pack="fas"
-                      icon="user"
-                      size="is-small">
-                  </b-icon> <span style="font-size: 20px;">Order name</span>     </span>
+                      icon="arrow-left"
+                      size="is-small"
+                      >
+                  </b-icon></span>&nbsp;
+               <span style="font-size: 20px;">Order name</span>     </span>
       <b-tabs :animated="false">
         <b-tab-item label="info">
+          <b-collapse class="" aria-id="contentIdForA11y3">
+            <div
+                slot="trigger" 
+                slot-scope="props"
+                class="card-header"
+                role="button"
+                aria-controls="contentIdForA11y3">
+                 <a class="header-icon">
+                    <b-icon
+                        :icon="props.open ? 'chevron-down' : 'chevron-up'">
+                    </b-icon>
+                </a>
+                <p class="header-title">
+                    Component
+                </p>
+               
+            </div>
+            <div class="content">
+                <div class="content">
+                   <div>
+                    
+                      <b-field label="Name">
+            <b-input value="Kevin Garvey"></b-input>
+        </b-field>
+                   </div>
+                </div>
+            </div>
+        </b-collapse>
         </b-tab-item>
         <b-tab-item label="line items">
         </b-tab-item>
