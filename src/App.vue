@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-    <div id="nav">
+        <div id="nav">
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
-=======
     <div class="columns" style="margin-top: 3px;">
 <div class="column is-one-fifth" >
      <sidebar> </sidebar>
->>>>>>> 3e553be8e4f7e75e970218be80fb592e91ff07bb
     </div>
      <div class="column is-9 ">
             <router-view></router-view>
