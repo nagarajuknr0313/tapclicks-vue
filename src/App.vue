@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="columns" style="margin-top: 3px;">
+<div class="column is-one-fifth" >
+     <sidebar> </sidebar>
     </div>
-    <router-view />
+     <div class="column is-9 ">
+            <router-view></router-view>
+        </div>
+    </div>
+    
   </div>
 </template>
-
+<script>
+import sidebar from "./Sidebar.vue";
+export default {
+  components:{
+    "sidebar":sidebar
+  }
+}
+</script>
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
